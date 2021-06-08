@@ -11,7 +11,7 @@ const Search=()=> {
     useEffect(()=>{
         const timerId=setTimeout(()=>{
             setDebouncedTerm(term);
-        },800);
+        },600);
         return ()=>{
             clearTimeout(timerId);
     };
